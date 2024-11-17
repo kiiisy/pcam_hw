@@ -1,0 +1,12 @@
+*.DS_Store
+*.xpr
+
+/design/.Xil/
+/design/pcam_hw/pcam_hw.cache/
+/design/pcam_hw/pcam_hw.gen/
+/design/pcam_hw/pcam_hw.hw/
+/design/pcam_hw/pcam_hw.ip_user_files/
+/design/pcam_hw/pcam_hw.runs/
+/design/pcam_hw/pcam_hw.sim/
+/design/pcam_hw/pcam_hw.srcs/
+
