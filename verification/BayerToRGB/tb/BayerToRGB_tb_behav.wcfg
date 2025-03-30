@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="BayerToRGB_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="BayerToRGB_tb" />
+            <top_module name="axi4stream_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="12,322.362 ns"></ZoomStartTime>
+      <ZoomEndTime time="12,390.886 ns"></ZoomEndTime>
+      <Cursor1Time time="12,336.311 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/BayerToRGB_tb/aclk">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/BayerToRGB_tb/aresetn">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/BayerToRGB_tb/AXIS_CLK_PERIOD">
+      <obj_property name="ElementShortName">AXIS_CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/BayerToRGB_tb/RST_PERIOD">
+      <obj_property name="ElementShortName">RST_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RST_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group15">
+      <obj_property name="label">S_AXIIS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/s_axis_video_tready">
+         <obj_property name="ElementShortName">s_axis_video_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_video_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/s_axis_video_tdata">
+         <obj_property name="ElementShortName">s_axis_video_tdata[39:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_video_tdata[39:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/s_axis_video_tvalid">
+         <obj_property name="ElementShortName">s_axis_video_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_video_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/s_axis_video_tuser">
+         <obj_property name="ElementShortName">s_axis_video_tuser</obj_property>
+         <obj_property name="ObjectShortName">s_axis_video_tuser</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/s_axis_video_tlast">
+         <obj_property name="ElementShortName">s_axis_video_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_video_tlast</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sDataIsAvailableAndRequested">
+      <obj_property name="ElementShortName">sDataIsAvailableAndRequested</obj_property>
+      <obj_property name="ObjectShortName">sDataIsAvailableAndRequested</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group50">
+      <obj_property name="label">RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sLineBufferWrite">
+         <obj_property name="ElementShortName">sLineBufferWrite</obj_property>
+         <obj_property name="ObjectShortName">sLineBufferWrite</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sLineBufferWriteAddr">
+         <obj_property name="ElementShortName">sLineBufferWriteAddr[10:0]</obj_property>
+         <obj_property name="ObjectShortName">sLineBufferWriteAddr[10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sLineBufferWriteData">
+         <obj_property name="ElementShortName">sLineBufferWriteData[9:0]</obj_property>
+         <obj_property name="ObjectShortName">sLineBufferWriteData[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sLineBufferRead">
+         <obj_property name="ElementShortName">sLineBufferRead</obj_property>
+         <obj_property name="ObjectShortName">sLineBufferRead</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sLineBufferReadAddr">
+         <obj_property name="ElementShortName">sLineBufferReadAddr[10:0]</obj_property>
+         <obj_property name="ObjectShortName">sLineBufferReadAddr[10:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sLineBufferReadData">
+         <obj_property name="ElementShortName">sLineBufferReadData[9:0]</obj_property>
+         <obj_property name="ObjectShortName">sLineBufferReadData[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sPixel">
+      <obj_property name="ElementShortName">sPixel[3:0][10:0]</obj_property>
+      <obj_property name="ObjectShortName">sPixel[3:0][10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sPixel[3]">
+         <obj_property name="ElementShortName">[3][10:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sPixel[2]">
+         <obj_property name="ElementShortName">[2][10:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sPixel[1]">
+         <obj_property name="ElementShortName">[1][10:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sPixel[0]">
+         <obj_property name="ElementShortName">[0][10:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sAXIMasterBlue">
+      <obj_property name="ElementShortName">sAXIMasterBlue[9:0]</obj_property>
+      <obj_property name="ObjectShortName">sAXIMasterBlue[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sAXIMasterGreen">
+      <obj_property name="ElementShortName">sAXIMasterGreen[10:0]</obj_property>
+      <obj_property name="ObjectShortName">sAXIMasterGreen[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/sAXIMasterRed">
+      <obj_property name="ElementShortName">sAXIMasterRed[9:0]</obj_property>
+      <obj_property name="ObjectShortName">sAXIMasterRed[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group16">
+      <obj_property name="label">M_AXIS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/m_axis_video_tready">
+         <obj_property name="ElementShortName">m_axis_video_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_video_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/m_axis_video_tdata">
+         <obj_property name="ElementShortName">m_axis_video_tdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_video_tdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/m_axis_video_tvalid">
+         <obj_property name="ElementShortName">m_axis_video_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_video_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/m_axis_video_tuser">
+         <obj_property name="ElementShortName">m_axis_video_tuser</obj_property>
+         <obj_property name="ObjectShortName">m_axis_video_tuser</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/BayerToRGB_tb/dut/BayerToRGB_Test_i/AXI_BayerToRGB_0/U0/m_axis_video_tlast">
+         <obj_property name="ElementShortName">m_axis_video_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_video_tlast</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -31,9 +31,9 @@ module grayscale_top #(
     reg          r_axis_video_tuser;
     reg          r_axis_video_tlast;
 
-    assign w_red   = S_AXIS_VIDEO_TDATA[ 9: 0];
-    assign w_green = S_AXIS_VIDEO_TDATA[19:10];
-    assign w_blue  = S_AXIS_VIDEO_TDATA[29:20];
+    assign w_green = S_AXIS_VIDEO_TDATA[ 9: 0];
+    assign w_blue  = S_AXIS_VIDEO_TDATA[19:10];
+    assign w_red   = S_AXIS_VIDEO_TDATA[29:20];
 
     always @(posedge CLK or posedge RESET) begin
         if (RESET) begin

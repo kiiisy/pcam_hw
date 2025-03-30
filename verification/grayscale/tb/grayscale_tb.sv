@@ -21,30 +21,33 @@ module grayscale_tb ();
     design_1_axi_vip_0_0_mst_t axi_master_agent;
 
     // Axi4 Stream
-    logic aclk = 0;
-    logic aresetn = 0;
+    logic axis_aclk = 0;
+    logic axis_aresetn = 0;
 
     // Axi4 Lite
-    logic AxiLiteClk = 0;
-    logic aAxiLiteReset_n = 0;
+    logic aclk = 0;
+    logic axi_aresetn = 0;
 
     // dut
     design_1_wrapper dut(
         .aclk            (aclk),
-        .aresetn         (aresetn)
+        .axi_aresetn     (axi_aresetn),
+        .axis_aclk       (axis_aclk),
+        .axis_aresetn    (axis_aresetn)
     );
 
     // リセット処理
     initial begin
         #(RST_PERIOD);
-        aresetn = 1;
-        aAxiLiteReset_n = 1;
+        axi_aresetn = 1;
+        axis_aresetn = 1;
     end
 
-    always #(AXIS_CLK_PERIOD) aclk = ~aclk;
+    always #(AXIS_CLK_PERIOD) axis_aclk = ~axis_aclk;
+    always #(AXIL_CLK_PERIOD) aclk = ~aclk;
 
     task wait_clk(int n);
-        repeat(n) @(posedge aclk);
+        repeat(n) @(posedge axis_aclk);
     endtask
 
     task init_agent();
@@ -72,10 +75,16 @@ module grayscale_tb ();
         axis_slave_agent.driver.send_tready(axis_ready);
     endtask
 
-    task wr_tansaction(input logic [31:0] data, input logic user, input logic last);
+    task wr_tansaction(input logic user, input logic last);
         axi4stream_transaction wr_trans;
+        logic [9:0] r_data;
+        logic [9:0] b_data;
+        logic [9:0] g_data;
         wr_trans = axis_master_agent.driver.create_transaction("write transaction");
-        wr_trans.set_data_beat(data);
+        r_data = $urandom_range(255);
+        b_data = $urandom_range(255);
+        g_data = $urandom_range(255);
+        wr_trans.set_data_beat({2'b00, r_data, b_data, g_data});
         wr_trans.set_user_beat(user);
         wr_trans.set_last(last);
         wr_trans.set_delay(0);
@@ -101,9 +110,9 @@ module grayscale_tb ();
 
         for (int i = 0; i < 100; i++) begin
             if (i == 99) begin
-                wr_tansaction(i, 1, 1);
+                wr_tansaction(1, 1);
             end else begin
-                wr_tansaction(i, 1, 0);
+                wr_tansaction(1, 0);
             end
         end
         $finish();
